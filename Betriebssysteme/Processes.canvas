@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"type":"text","text":"C-Code\n","id":"30fc78a1443209cd","x":-460,"y":-220,"width":250,"height":60},
+		{"type":"text","text":"Maschinencode","id":"b3aae82256811869","x":-125,"y":-220,"width":250,"height":60},
+		{"type":"text","text":"Programm","id":"7943e1498e589f6e","x":-460,"y":-100,"width":585,"height":50},
+		{"type":"text","text":"","id":"3c3640f2e18fddce","x":220,"y":-220,"width":250,"height":60},
+		{"type":"text","text":"Prozess","id":"36de360389a32814","x":220,"y":-110,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"38c8eb55377c3b3c","fromNode":"30fc78a1443209cd","fromSide":"top","toNode":"b3aae82256811869","toSide":"top"},
+		{"id":"12255b2edc4b5386","fromNode":"b3aae82256811869","fromSide":"top","toNode":"3c3640f2e18fddce","toSide":"top"}
+	]
+}

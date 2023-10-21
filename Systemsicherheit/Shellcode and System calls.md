@@ -1,0 +1,5 @@
+Um Parameter an den Syscall zu übergeben werden die register ebx und ecx verwendet, je nach der Länge der zu übergebenen Paramter sollten die jeweiligen Unterregister addressiert werden, um Nullbytes im Shellcode zu vermeiden. In das eax Registers wird anhand des Befehels (bsp. sys_exit) ``mov al, 0x01``, der jeweilige Syscall gesetzt, der anschließend vom Kernel aufgerufen werden soll, auch hier muss daraufgeachtet werden keine Nullbytes beimLaden in eax zu erzeugen. Um den Kernel letztendlich aufzurufen wird der Befehl  ```assembly
+int 0x80 ; call the syscall ``` verwendet
+
+ Syscalls are used in shellcode because the process dose not have to find and load in a shared object or have statically linked code to obtain functionality outside of the program. Syscalls are always there for our shellcode to call
+ https://rayoflightz.github.io/shellcoding/linux/x86/2018/11/15/Shellcoding-for-linux-on-x86.html
