@@ -40,6 +40,6 @@ g^s -> Diffie-Hellmann Share
 -das pms wird vom client mit dem public rsa key des  Servers verschlüsselt, der dem RSA-Zertifikat des Servers entnommen wird
 ![[Screenshot from 2023-04-18 14-58-41.png]]
 
-
+[[TLS Quantum-safe handshake]]
 
 ![[TLS Handshake.pdf]][[TLS Record Layer]]

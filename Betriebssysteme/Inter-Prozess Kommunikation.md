@@ -39,7 +39,7 @@ Zusätzlich zur shared memory inter-prozess Kommunikation, kann die Kommunikatio
 signal(7) kann benutzt werden um das default signal handling zu definieren
 
 
->[Example]
+>[!Example]
 >start process nano with example file
 >in one terminal:
 > `jmxnzo@jmxnzo-ThinkPad-T470-W10DG:~$ ps -e`
