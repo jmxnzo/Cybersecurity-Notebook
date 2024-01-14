@@ -69,3 +69,6 @@ https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registr
 - HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
 - HKLM\Software\Microsoft\Windows\CurrentVersion\Run
 - HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
+
+
+Shellbags are a set of registr keys which contain details about user's viewed folder(size,position and icon)

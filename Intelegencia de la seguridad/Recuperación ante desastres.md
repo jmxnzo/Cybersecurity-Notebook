@@ -138,3 +138,19 @@ Record your data processing personnel. Include a copy of the organizational char
 - An Incident Management Plan focuses on protecting confidential data during an event and outlines the scope of actions to be taken during the incident. This includes specifying the functions and responsibilities of the incident response team.
 - On the other hand, a DRP focuses on defining recovery objectives and the steps that need to be taken for the organization to return to operational status after an incident occurs.
 
+
+
+• UNE 71505 1:2013, UNE 71505 2:2013 y UNE 71505 3:2013.
+• Sistema de Gestión de Evidencias Electrónicas (SGEE)
+• ISO 27037
+• RFC 3227
+• UNE 71506:2013.
+• Metodología para el análisis forense de las evidencias electrónicas.
+• UNE EN ISO/IEC 27037:2016.
+• Técnicas de seguridad. Directrices para la identificación, recogida,
+adquisición y preservación de evidencias electrónicas (ISO/IEC
+27037:2012)
+• UNE EN ISO/IEC 27006:2020.
+• Técnicas de seguridad. Requisitos para organismos que realizan
+auditorías y certificación de sistemas de gestión de seguridad de la
+información (ISO/IEC 27006:2015, incluyendo Amd 1:2020)

@@ -72,3 +72,6 @@ LGPE (Local Group Policy Editor) is part of the administrative tools in Windows.
     
 - **Procmon (Process Monitor):** Monitors the activity of a process, especially file access, registry, and network activity.
 https://lolbas-project.github.io
+
+
+[[Access Control]]

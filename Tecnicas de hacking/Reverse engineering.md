@@ -1,5 +1,23 @@
 ![[Pasted image 20240103000359.png]]
 
+1. **RAX, RBX, RCX, RDX:**
+   - RAX is the accumulator register.
+   - RBX is the base register.
+   - RCX is the counter register.
+   - RDX is the data register.
+
+   These are general-purpose registers in the processor that can store both data and addresses. Each register serves a specific purpose, and they are commonly used in x86 and x86-64 architectures.
+
+2. **RBP, RSP:**
+   - RBP is the base pointer register.
+   - RSP is the stack pointer register.
+
+   These registers are used for managing the stack in a program. RBP typically points to the base of the current stack frame, while RSP points to the top of the stack.
+
+3. **RIP:**
+   - RIP is the instruction pointer register.
+
+   RIP stores the address of the next instruction to be executed. It plays a crucial role in keeping track of the program's execution flow.
 
 - Dynamic analysis: We run the application (ALWAYS ON A VM) and observe its behavior with different inputs.
 

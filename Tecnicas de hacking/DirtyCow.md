@@ -21,11 +21,11 @@ https://www.youtube.com/watch?v=kEsshExn7aE
 ![[Pasted image 20231230133857.png]]
 **Exploit Mechanism:** 
 The Dirty COW exploit occurs in multiple steps:
-- The attacker creates a thread aimed at modifying the read-only memory region.
-- The kernel locates the physical address and starts checking the Dirty Bit and deciding whether to create a copy.
-- During this check, the attacker initiates a race condition. The attacker uses `madvise` with `MADV_DONTNEED` to signal to the kernel that it doesn't care about the specified page range.
-- At this point, since the kernel assumes the memory region is read-only and has received the `MADV_DONTNEED` signal, no copy is created.
-- However, the attacker's write access takes place, and the Dirty Bit is not updated.
+- The attacker creates a thread, which modifies the read-only memory region.
+- The kernel locates the physical address and starts checking the Dirty Bit and by that creates the private copy in mapped memory, because of the COW mechanism.
+- During the write system call, the attacker initiates a race condition. The attacker uses `madvise` with `MADV_DONTNEED` to signal to the kernel that it doesn't care about the specified page range.
+- At this point, since the kernel assumes the memory region is read-only and has received the `MADV_DONTNEED` signal, the private copy in main memory is discarded.
+- However, the attacker's write access takes place afterwards, but instead of writing on the private copy, it is performed on the read-only memory area.
 - Thus, the kernel remains unaware that the memory region has been altered, and the attacker gains write access to a read-only area.
 
 **Privilege Escalation:** 

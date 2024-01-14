@@ -27,6 +27,8 @@
 	- $USER: muestra el usuario logado.
 	- $HOST: muestra el nombre de la máquina.
 	- $ARCH: muestra la arquitectura del procesador de la máquina.
-	- $OSTIPE: muestra el Sistema Operativo que se está utilizando.
+	- $OSTYPE: muestra el Sistema Operativo que se está utilizando.
 	- $PRINTER: muestra la impresora por defecto para enviar trabajos de impresión.
 
+
+[[Técnicas Básicas de Explotación en Linux]]

@@ -35,7 +35,9 @@
 • Las auditorías externas:
 - Obligatorias cuando hay que verificar el cumplimiento de leyes
 - Opcionales cuando la empresa busca lograr certificaciones
+![[Pasted image 20240111210211.png]]
 • Las auditorías internas:
 - Ayudan a evaluar la efectividad de un procedimiento, sistema, etc. recién implementado
 - Confirman la adecuación de los procedimientos, controles, sistemas, etc. ya existentes
 - Analizan vulnerabilidades e identifican debilidades
+![[Pasted image 20240111210131.png]]
