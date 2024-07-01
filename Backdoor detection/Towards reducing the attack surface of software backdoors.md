@@ -8,6 +8,9 @@ date created: "{{date}}"
 link: 
 conference: CCS 2013
 ---
+. https://github.com/flxflx/weasel
+
+
 ## Linked papers
 S. Dai, T. Wei, C. Zhang, T. Wang, Y. Ding, Z. Liang, and W. Zou. A framework to eliminate backdoors from response-computable authentication. In IEEE Symposium on Security and Privacy, 2012.
 - eliminate potential triggers for a backdoor -> attacker can find new triggers
@@ -41,3 +44,12 @@ Classes of backdoors included:
 - C1 through exclusive function invocations
 - C2 through exclusive paths inside commonly invoked functions (i.e., exclusive basic blocks)
 - C3 without exclusive program parts, but through an exclusive execution order of common functions and basic blocks
+
+
+
+
+Der Protocol player dient lediglich zum Abspielen verschiedener Protokols, um die richtigen Inputs für die function calls zu ermöglichen und das Protokoll richtig zu durchlaufen.  Gdb steppt single instructions und erkennt somit an welchen Stellen decider und handler sind . Decider und handler die in keinem der Protokoll Laufe eingesetzt werden "cold edges" weisen darauf hin, dass hidden functionality ist. Der Pfad der Backdoor muss gar nicht im Protokollplayer durchlaufen werden, es reicht die conditional branch des deciders zu sehen und den entsprechenden handler für beide branches, um die cold edges zu cutten.
+
+
+
+The backdoor can not be found using the protocol player, because the backdoor will never be included in any trace (it's secured by the secret input), but cutting the cold edges implicitly removes the backdoor paths. This approach is really useful for 

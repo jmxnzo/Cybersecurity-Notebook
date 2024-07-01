@@ -1,5 +1,8 @@
 Round-Based AES Encryption describes the most intentional implementation of AES on hardware module, using different combinational circuits to do the round calculation and storing the round states in register using sequential logic(D-Flip-Flops) 
 
+### longest signal path: 
+because the execution time of the combinatorial circuit should not extend the clock frequency. Otherwise the wrong values would be stored in the synchronizing elements. So it’s important to determine which path is the longest, to avoid using the wrong values for the next round.
+
 ![[Pasted image 20240514112951.png]]
 
 ### Simplification of decryption
